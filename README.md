@@ -11,4 +11,4 @@ Tecnologias usadas:
 • Lombok
 • MySQL Workbench
 
-<img src=”C:\Users\jocam\Downloads\Atividade\DELETE”>
+<img src=”src/main/resources/ClientePics/GetAll.JPG”>
