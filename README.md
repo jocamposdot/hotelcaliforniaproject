@@ -11,4 +11,6 @@ Tecnologias usadas:
 • Lombok
 • MySQL Workbench
 
-<img src=”https://github.com/jocamposdot/hotelcaliforniaproject/blob/master/src/main/resources/ClientePics/GetAll.JPG?raw=true”>
+<br>
+<img height="500px" src=”https://github.com/jocamposdot/hotelcaliforniaproject/blob/master/src/main/resources/ClientePics/GetAll.JPG?raw=true” />
+<br>
