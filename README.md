@@ -12,5 +12,5 @@ Tecnologias usadas:
 • MySQL Workbench
 
 <br>
-<img height="500px" src=”https://github.com/jocamposdot/hotelcaliforniaproject/blob/master/src/main/resources/ClientePics/GetAll.JPG?raw=true” />
+<img height="500px" src=”https://github.com/jocamposdot/hotelcaliforniaproject/blob/master/src/main/resources/ClientePics/GetAll.JPG” />
 <br>
