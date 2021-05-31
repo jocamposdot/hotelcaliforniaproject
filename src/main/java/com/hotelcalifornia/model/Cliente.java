@@ -5,10 +5,6 @@ import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 
-import com.fasterxml.jackson.annotation.JsonIgnore;
-import com.fasterxml.jackson.annotation.JsonProperty;
-import com.fasterxml.jackson.annotation.JsonProperty.Access;
-
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -34,19 +30,8 @@ public class Cliente {
 	
 	//Sinalizando para o JPA que vários clientes vão estar relacionados com um hotel (muitos-para-1):
 	@ManyToOne	
-<<<<<<< HEAD
-=======
-	/*
-	 MINHA MAIOR DÚVIDA MORA AQUI:	 
-	 Essa anotação vai impedir o json de trazer esta coluna causando uma recursividade infinita, em contrapartida, ela impossibilitou a 
-	 minha desserialização, ou seja, não consigo mais atualizar/criar este campo pelo Insomnia, então coloquei o 'nullable = true', pois 
-	 caso contrário, eu não conseguiria criar um novo cliente, só que, em contrapartida, eu acabei ficando impossibilitado de vincular 
-	 cliente a um hotel:
-	*/
->>>>>>> 76229f6572a6349cd461765f572a670af7ad47a7
-	@JsonIgnore
 	//Sinalizando ao JPA que a coluna FK de cliente (matricula_id) será a responsável pelo mapeamento entre Cliente e Hotelcalifornia:
 	@JoinColumn(name="matricula_id", nullable = true)
-	private Hotelcalifornia hotelcali;  
+	private Hotelcalifornia hotelcalifornia;  
 
 }
