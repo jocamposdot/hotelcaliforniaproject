@@ -5,6 +5,8 @@ import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
+
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -32,6 +34,8 @@ public class Cliente {
 	@ManyToOne	
 	//Sinalizando ao JPA que a coluna FK de cliente (matricula_id) será a responsável pelo mapeamento entre Cliente e Hotelcalifornia:
 	@JoinColumn(name="matricula_id", nullable = true)
+	//Aqui também vai o JasonBackReference para evitar recursividade infinita
+	@JsonBackReference
 	private Hotelcalifornia hotelcalifornia;  
 
 }

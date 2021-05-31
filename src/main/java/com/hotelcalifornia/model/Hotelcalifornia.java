@@ -9,6 +9,8 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.OneToMany;
 
+import com.fasterxml.jackson.annotation.JsonManagedReference;
+
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -37,7 +39,9 @@ public class Hotelcalifornia {
 
 	//Mapeando com cliente -> Um hotel para vários clientes (1 para N):
 	@OneToMany(cascade=CascadeType.REMOVE, mappedBy = "hotelcalifornia")
-	//Aqui ele recebe uma lista por que podem vir muitos objetos de cliente:
+	//Aqui ele recebe uma lista por que podem vir muitos objetos de cliente
+	//Utilizei o JasonManagedReference para evitar recursividade infinita
+	@JsonManagedReference
 	private List<Cliente> clientes;  
 	
 }

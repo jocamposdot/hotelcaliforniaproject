@@ -8,9 +8,7 @@ import com.hotelcalifornia.model.Hotelcalifornia;
 //Implementando à interface HotelCaliforniaRepository alguns métodos genéricos do JPA que usaremos no CRUD:
 @Repository
 public interface HotelCaliforniaRepository extends JpaRepository<Hotelcalifornia, Long>{
-<<<<<<< HEAD
-	Hotelcalifornia findByUsername (String username);
-=======
 
->>>>>>> 76229f6572a6349cd461765f572a670af7ad47a7
+//	Hotelcalifornia findByUsername (String username);
+
 }

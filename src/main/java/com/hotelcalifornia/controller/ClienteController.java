@@ -55,7 +55,7 @@ public class ClienteController {
 					record.setIdade(cliente.getIdade());
 					record.setFone(cliente.getFone());
 					record.setEmail(cliente.getEmail());
-					record.setHotelcali(cliente.getHotelcali());
+					record.setHotelcalifornia(cliente.getHotelcalifornia());
 					Cliente update = repository.save(record);
 					return ResponseEntity.ok().body(update);
 				}).orElse(ResponseEntity.notFound().build());
