@@ -34,9 +34,9 @@ public class Hotelcalifornia {
 	private	String cidade;
 	private float estrelas;
 	
-	//Mapeando com cliente -> Um hotel para vários clientes (1 para N):
+	//Mapeando com cliente -> Um hotel para vários clientes (1 para N)
 	@OneToMany(cascade=CascadeType.REMOVE, mappedBy = "hotelcali")
-	//Aqui ele recebe uma lista por que podem vir muitos objetos de cliente:
+	//Aqui ele recebe uma lista por que podem vir muitos objetos de cliente
 	private List<Cliente> clientes;  
 	
 }
